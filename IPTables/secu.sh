@@ -19,7 +19,9 @@ sudo iptables -t filter -A OUTPUT -p icmp -j ACCEPT
 sudo iptables -t filter -A INPUT -p tcp --dport 22 -j DROP
 
 # SSH Out
-sudo iptables -t filter -A OUTPUT -p tcp --dport 22 -j ACCEPT
+sudo iptables -t filter -A OUTPUT -p tcp --dport 22 -j DROP
+sudo iptables -t filter -A OUTPUT -p tcp --dport 2222 -j DROP
+
 
 # ---
 
