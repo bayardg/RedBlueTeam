@@ -1,3 +1,5 @@
+#!/bin/sh
+
 sudo apt install openssh-server
 sudo rm /etc/ssh/ssh_host_*_key
 sudo ssh-keygen -t rsa -b 4096 -f /etc/ssh/safe_host_rsa_key
