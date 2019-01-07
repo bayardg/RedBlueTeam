@@ -16,11 +16,19 @@ sudo iptables -t filter -A INPUT -p icmp -j ACCEPT
 sudo iptables -t filter -A OUTPUT -p icmp -j ACCEPT
 
 # SSH In
-sudo iptables -t filter -A INPUT -p tcp --dport 22 -j DROP
+iptables -t filter -A INPUT -p tcp --dport 2222 -j ACCEPT
 
 # SSH Out
-sudo iptables -t filter -A OUTPUT -p tcp --dport 22 -j DROP
-sudo iptables -t filter -A OUTPUT -p tcp --dport 2222 -j DROP
+iptables -t filter -A OUTPUT -p tcp --dport 2222 -j ACCEPT
+
+# DNS In/Out
+iptables -t filter -A OUTPUT -p tcp --dport 53 -j ACCEPT
+iptables -t filter -A OUTPUT -p udp --dport 53 -j ACCEPT
+iptables -t filter -A INPUT -p tcp --dport 53 -j ACCEPT
+iptables -t filter -A INPUT -p udp --dport 53 -j ACCEPT
+
+# NTP Out
+iptables -t filter -A OUTPUT -p udp --dport 123 -j ACCEPT
 
 
 # ---
