@@ -1,0 +1,105 @@
+    1  ipcnfig
+    2  ipconfig
+    3  ifcondif
+    4  ifconfig
+    5  cat /etc/passw | awk -F: '{print $ 1}'
+    6  cat /etc/passwd | awk -F: '{print $ 1}'
+    7  cat /etc/group | awk -F: '{print $ 1}'
+    8  ifconfig
+    9  sudo addgroup groupe1
+   10  sudo addgroup groupe2
+   11  sudo adduser Bob
+   12  sudo adduser CysecBob
+   13  cat /etc/adduser.conf 
+   14  sudo adduser Bob
+   15  sudo adduser CysecBob1
+   16  sudo adduser --force-badname Bob
+   17  sudo adduser --force-badname Alice
+   18  sudo adduser --force-badname Eve
+   19  cat /etc/group | awk -F: '{print $ 1}'
+   20  sudo adduser Bob groupe1
+   21  sudo adduser Alice groupe2
+   22  sudo adduser Eve groupe1
+   23  sudo adduser Eve groupe2
+   24  sudo apt update
+   25  sudo apt upgrade
+   26  sudo apt update
+   27  sudo apt install apache2
+   28  userdel Bob
+   29  sudo userdel Bob
+   30  sudo userdel Alice
+   31  sudo userdel Eve
+   32  sudo groupdel groupe1
+   33  sudo groupdel groupe2
+   34  sudo groupadd -g 123 groupe1
+   35  sudo groupadd -g 100 groupe1
+   36  sudo groupadd -g 123456 groupe1
+   37  sudo groupadd -g 7890 groupe2
+   38  cd ~
+   39  ls -a
+   40  cd /
+   41  ls -a
+   42  cd usr/
+   43  ls -a
+   44  cd ..
+   45  ls -a
+   46  cd ..
+   47  ls -a
+   48  cd /etc/
+   49  ls -a
+   50  cd ..
+   51  ls -a
+   52  cd home/
+   53  ls -a
+   54  cd Alice/
+   55  ls -a
+   56  cd ..
+   57  rm -rf Alice
+   58  sudo rm -rf Alice
+   59  sudo rm -rf Bob/
+   60  sudo rm -rf Bob
+   61  sudo rm -rf Eve
+   62  sudo useradd -d /home/Alice -u 10 -g 123456 -s /bin/bash -m Alice
+   63  sudo useradd -d /home/Alice -u 1001 -g 123456 -s /bin/bash -m Alice
+   64  sudo useradd -d /home/Bob -u 1002 -g 12345 -s /bin/bash -m Alice
+   65  sudo useradd -d /home/Bob -u 1002 -g 7890 -s /bin/bash -m Bob
+   66  sudo useradd -d /home/Eve -u 1003 -g 123456 7890 -s /bin/bash -m Eve
+   67  sudo useradd -d /home/Eve -u 1003 -ag 123456,7890 -s /bin/bash -m Eve
+   68  sudo useradd -d /home/Eve -u 1003 -aG 123456,7890 -s /bin/bash -m Eve
+   69  sudo useradd -d /home/Eve -u 1003 -G 123456,7890 -s /bin/bash -m Eve
+   70  cat /etc/group
+   71  sudo adduser Bob groupe1
+   72  sudo adduser Alice groupe2
+   73  cat /etc/group
+   74  vim /etc/apache2/ports.conf 
+   75  sudo apt install vim
+   76  sudo apt install gedit
+   77  vim /etc/apache2/ports.conf 
+   78  cd /etc/apache2/sites-available/
+   79  ls -a
+   80  vim 000-default.conf 
+   81  cd /var/www/html/
+   82  ls -
+   83  ls -a
+   84  vim index.html 
+   85  firefox index.html 
+   86  cp index.html site1.html 
+   87  sudo cp index.html site1.html 
+   88  ls -a
+   89  sudo cp index.html site2.html 
+   90  cd /etc/apache2/sites-available/
+   91  ls -a
+   92  vim 000-default.conf 
+   93  sudo /etc/init.d/apache2 start
+   94  vim /etc/apache2/ports.conf 
+   95  vim 000-default.conf 
+   96  cd /var/www/html/
+   97  ls -a
+   98  gedit site1.html 
+   99  sudo gedit site1.html 
+  100  sudo gedit site2.html 
+  101  ls -a
+  102  vim /etc/apache2/ports.conf 
+  103  ls -a
+  104  cat history
+  105  history > ~/Bureau/history.txt

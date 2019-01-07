@@ -1,0 +1,94 @@
+    1  ipcnfig
+    2  ipconfig
+    3  ifcondif
+    4  ifconfig
+    5  cat /etc/passw | awk -F: '{print $ 1}'
+    6  cat /etc/passwd | awk -F: '{print $ 1}'
+    7  cat /etc/group | awk -F: '{print $ 1}'
+    8  ifconfig
+    9  cd /var/www/
+   10  ls -a
+   11  cd html/
+   12  ls -a
+   13  mkdir ../site1
+   14  cd ..
+   15  sudo mkdir site1
+   16  sudo mkdir site2
+   17  cp html/site1.html site1/index.html
+   18  sudo cp html/site1.html site1/index.html
+   19  sudo cp html/site2.html site2/index.html
+   20  ls -a
+   21  cd site
+   22  ls -a
+   23  cd site1/
+   24  ls -a
+   25  vim index.html 
+   26  cd //
+   27  cd /var/www/site1/
+   28  ls -a
+   29  vim index.html 
+   30  cd ..
+   31  ls -a
+   32  cd site2/
+   33  ls -a
+   34  sudo gedit index.html 
+   35  ls -a
+   36  cd ..
+   37  cd site1/
+   38  vim index.html 
+   39  cd ../site2/
+   40  vim index.html 
+   41  ls -a
+   42  cd ..
+   43  ls -a
+   44  cd html/
+   45  ls -a
+   46  rm site1.html 
+   47  vim site1.html 
+   48  sudo rm site*
+   49  ls -a
+   50  cd ..
+   51  ls -a
+   52  cd site1/
+   53  ls -a
+   54  vim index.html 
+   55  cd ..
+   56  ls -a
+   57  cd site1/
+   58  ls -a
+   59  mkdir public
+   60  sudo mkdir public
+   61  mv index.html public/
+   62  sudo mv index.html public/
+   63  cd ..
+   64  cd site2
+   65  sudo mkdir public
+   66  mv index.html public/
+   67  sudo mv index.html public/
+   68  chown -R root:root /var/www/site1/public
+   69  sudo chown -R root:root /var/www/site1/public
+   70  sudo chown -R root:root /var/www/site2/public
+   71  chmod -R 755 /var/www
+   72  sudo chmod -R 755 /var/www
+   73  cd ..
+   74  mv site1 site1.fr
+   75  sudo mv site1 site1.fr
+   76  ls -a
+   77  sudo mv site2 site2.fr
+   78  ls -a
+   79  sudo mv site2.fr site2
+   80  sudo mv site1.fr site1
+   81  cd /var/www/
+   82  ls -a
+   83  cd site1/
+   84  ls -a
+   85  cd public/
+   86  vim index.html 
+   87  sudo vim index.html 
+   88  cd ../../site2/public/
+   89  sudo vim index.html 
+   90  cd ..
+   91  sudo vim site1/public/index.html 
+   92  sudo vim site2/public/index.html 
+   93  sudo vim site1/public/index.html 
+   94  history > ~/Bureau/history3.txt

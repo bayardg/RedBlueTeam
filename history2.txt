@@ -1,0 +1,113 @@
+    1  ipcnfig
+    2  ipconfig
+    3  ifcondif
+    4  ifconfig
+    5  cat /etc/passw | awk -F: '{print $ 1}'
+    6  cat /etc/passwd | awk -F: '{print $ 1}'
+    7  cat /etc/group | awk -F: '{print $ 1}'
+    8  ifconfig
+    9  cd ../sites-available/
+   10  ls -a
+   11  vim default-ssl.conf 
+   12  vim 000-default.conf 
+   13  vim site1.conf 
+   14  sudo gedit 000-default.conf 
+   15  a2ensite site1
+   16  sudo a2ensite site1
+   17  service apache2 reload
+   18  ls -a
+   19  vim 000-default.conf 
+   20  sudo cp site1.conf site2.conf
+   21  sudo gedit site2.conf 
+   22  sudo a2ensite site2
+   23  service apache2 reload
+   24  ls -a
+   25  rm site*
+   26  sudo rm site*
+   27  ls -a
+   28  sudo vim 000-default.conf 
+   29  ls -a
+   30  sudo a2ensite site2
+   31  ls -a
+   32  cd ../sites-enabled/
+   33  ls -a
+   34  sudo rm site*
+   35  cd ../sites-available/
+   36  sudo a2ensite site2
+   37  vim 000-default.conf 
+   38  sudo cp 000-default.conf site1.conf
+   39  sudo vim site1.conf 
+   40  sudo cp 000-default.conf site2.conf
+   41  vim site2.conf 
+   42  sudo vim site2.conf 
+   43  sudo a2ensite site2
+   44  sudo a2ensite site1
+   45  service apache2 reload
+   46  ls -a
+   47  vim site1.conf 
+   48  service apache2 reload
+   49  vim 000-default.conf 
+   50  sudo vim 000-default.conf 
+   51  sudo rm ../sites-enabled/site*
+   52  sudo a2ensite site1
+   53  service apache2 reload
+   54  sudo rm ../sites-enabled/site*
+   55  sudo a2ensite site1
+   56  sudo a2ensite site2
+   57  service apache2 reload
+   58  ls -a
+   59  vim site1.conf 
+   60  ls -a
+   61  vim default-ssl.conf 
+   62  ls -a
+   63  sudo gedit site* &
+   64  ls -a
+   65  sudo gedit site1.conf &
+   66  gedit
+   67  sudo gedit site1.conf
+   68  sudo vim site1.conf 
+   69  cp site1.conf site2.conf 
+   70  sudo cp site1.conf site2.conf 
+   71  vim site2.conf 
+   72  sudo vim site2.conf 
+   73  sudo a2ensite site1
+   74  sudo rm ../sites-enabled/site*
+   75  sudo a2ensite site1
+   76  sudo a2ensite site2
+   77  service apache2 reload
+   78  sudo vim /etc/hosts
+   79  ls -a
+   80  sudo vim site1.conf 
+   81  sudo a2ensite site1
+   82  service apache2 reload
+   83  ls -a
+   84  vim 000-default.conf 
+   85  vim default-ssl.conf 
+   86  vim site1.conf 
+   87  sudo vim site1.conf 
+   88  sudo vim site2.conf 
+   89  sudo mv site1.conf site1.fr
+   90  sudo mv site2.conf site2.fr
+   91  ls -a
+   92  vim site1.fr 
+   93  vim site2.fr 
+   94  ls -a
+   95  mv site1.fr site1.fr.conf
+   96  sudo mv site1.fr site1.fr.conf
+   97  sudo vim site1.fr.conf 
+   98  ls -a
+   99  vim 000-default.conf 
+  100  ls -a
+  101  mv site1.fr.conf site1.conf
+  102  sudo
+  103  sudo mv site1.fr.conf site1.conf
+  104  sudo mv site2.fr site2
+  105  ls -a
+  106  mv site2 site2.conf
+  107  sudo mv site2 site2.conf
+  108  sudo vim site1.conf 
+  109  sudo vim site2.conf 
+  110  sudo vim site1.conf 
+  111  sudo vim 000-default.conf 
+  112  sudo vim site1.conf 
+  113  history > ~/Bureau/history2.txt
