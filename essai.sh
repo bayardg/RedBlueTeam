@@ -9,3 +9,5 @@ sudo chmod o-x /usr/bin/apt-get
 sudo chmod o-x /usr/bin/aptitude
 
 sudo chmod o-x /usr/bin/dpkg
+
+sudo apt install fail2ban
